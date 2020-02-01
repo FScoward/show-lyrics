@@ -15,6 +15,9 @@ const createWindow = () => {
   mainWindow = new BrowserWindow({
     height: 600,
     width: 800,
+    transparent: true,
+    frame: false,       // フレームを非表示にする
+    resizable: false,    // ウィンドウリサイズ禁止
   });
 
   // and load the index.html of the app.
